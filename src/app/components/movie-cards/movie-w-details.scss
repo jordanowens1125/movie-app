@@ -1,0 +1,71 @@
+.movie-w-details {
+    overflow: hidden;
+  display: flex;
+  position: relative;
+  border-radius: 18px;
+  .bg-img {
+    min-height: 336px;
+  }
+  .info {
+    bottom: 0;
+    padding: 12px 16px;
+    background-color: pink;
+    position: absolute;
+    left: -1%;
+    right: -1%;
+    top: 100%;
+    display: grid;
+    grid-template-areas:
+      "title    title"
+      "year     year"
+      "img      right"
+      "text     text";
+    gap: 12px 8px;
+    grid-template-columns: 4fr 6fr;
+    grid-auto-rows: auto;
+    transition: 0.4s;
+    .title {
+      grid-area: title;
+    }
+    .year {
+      grid-area: year;
+      margin-bottom: 0px;
+    }
+    .info-img {
+      grid-area: img;
+      height: 100%;
+      max-height: 200px;
+      border-radius: 18px;
+    }
+    .right {
+      grid-area: right;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 6px;
+      .rating-circle {
+        width: 40%;
+      }
+      .members {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .item-h {
+        font-size: 0.8rem;
+      }
+      .role {
+        font-size: 0.7rem;
+      }
+    }
+    .text {
+      grid-area: text;
+      overflow: auto;
+    }
+  }
+}
+.movie-w-details:hover {
+  .info {
+    top: 0;
+  }
+}

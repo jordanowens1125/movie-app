@@ -1,0 +1,43 @@
+navbar
+    Icons 
+    links 
+    function for light and dark
+    Search option
+
+footer
+    Logo
+
+movie card 2 - movie with review
+    only needs background gradient generator
+
+readmore component
+    people page
+    reviews
+
+carousel
+    home
+    movie page
+    person page for project
+
+rating circle
+image gradient
+
+home
+    upper that changes on hover
+
+Movie page
+    dynamic data
+    reviews
+    add time under content
+
+Person page 
+    dynamic data
+    bottom 
+        Directing, Writing, Acting, Vocals, Production, etc
+
+
+Notfound Pages
+    No person
+    No movie
+
+light/dark mode

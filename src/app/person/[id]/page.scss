@@ -1,0 +1,64 @@
+.person {
+  .upper {
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    gap: 75px;
+    img {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      max-width: 350px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+    }
+  }
+  .right {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .rating-circle {
+      width: 96px;
+      font-size: 1.875rem;
+    }
+    .tag {
+      padding: 10px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.8;
+      border-radius: 1000px;
+      border: rgba(86, 86, 86, 0.9) 1px solid;
+    }
+  }
+  .from {
+    b {
+      margin-right: 8px;
+    }
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .upper {
+      flex-direction: row;
+      justify-content: center;
+      img{
+        margin: 0;
+      }
+    }
+  }
+}

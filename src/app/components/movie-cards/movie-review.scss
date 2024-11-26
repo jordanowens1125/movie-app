@@ -1,0 +1,48 @@
+.movie-review {
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  .info {
+    z-index: 10;
+    bottom: 0;
+    position: absolute;
+    transition: 0.4s;
+    padding: 0px 36px 50px;
+    column-gap: 16px;
+    display: grid;
+    grid-template-areas:
+      "img    name    rating-circle"
+      "title  title   title"
+      "text   text    text";
+    grid-template-columns: 75px 1fr 60px;
+  }
+
+  .bg-img {
+    min-height: 550px;
+  }
+
+  .user {
+    grid-area: img;
+    border-radius: 50%;
+  }
+  .title {
+    grid-area: title;
+    margin-top: 10px;
+  }
+  .text {
+    grid-area: text;
+    margin-top: 10px;
+  }
+  .name {
+    grid-area: name;
+    margin-top: auto;
+  }
+  .rating-circle {
+    margin-top: auto;
+  }
+}
+
+.movie-review:hover {
+  transform: translateY(-2px);
+}
