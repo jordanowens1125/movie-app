@@ -1,6 +1,10 @@
 import "./page.scss";
 import DEMOMOVIE from "../../constants/movie";
 import Person from "./person";
+import Carousel from "@/app/components/carousels/carousel";
+import MovieWDetails from "@/app/components/movie-cards/movie-w-details";
+import RatingCircle from "@/app/components/rating-circle";
+import Review from "./review";
 
 export default async function Page({ params }) {
   const ID = (await params).id;
@@ -21,9 +25,7 @@ export default async function Page({ params }) {
           </div>
 
           <div className="ratings">
-            <div className="circle" style={{}}>
-              <b>{DEMOMOVIE.rating}</b>
-            </div>
+            <RatingCircle value={6.6} size="L" />
             <span className="votes">
               <b>{DEMOMOVIE.votes}</b>
               Total Votes
@@ -54,6 +56,7 @@ export default async function Page({ params }) {
           {DEMOMOVIE.reviews.length > 0 ? (
             <>
               <h2>Reviews</h2>
+              <Review review={DEMOMOVIE.reviews[0]} />
             </>
           ) : (
             <>
@@ -61,8 +64,20 @@ export default async function Page({ params }) {
             </>
           )}
         </section>
-        <section className="related">
+        <section className="related" id="related">
           <h2>Related</h2>
+          <Carousel
+            count={3}
+            showPerSlide={3}
+            sectionID={"related"}
+            items={
+              <>
+                <MovieWDetails />
+                <MovieWDetails />
+                <MovieWDetails />
+              </>
+            }
+          />
         </section>
         <section className="sidebar">
           <div className="cast">

@@ -7,20 +7,19 @@ navbar
 footer
     Logo
 
-movie card 2 - movie with review
-    only needs background gradient generator
-
-readmore component
-    people page
-    reviews
+movie card 3 - movie card row
 
 carousel
     home
     movie page
     person page for project
+    add mobile slide on touch ???
+    broken just base it on count and what is in view
 
 rating circle
+    border gradient
 image gradient
+    movie card 2 - movie with review
 
 home
     upper that changes on hover

@@ -1,0 +1,21 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .section-h {
+    margin-bottom: 20px;
+  }
+  #reviews {
+    .group {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    @media screen and (min-width: 1024px) {
+      .group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

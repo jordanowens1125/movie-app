@@ -7,7 +7,7 @@ export default function RatingCircle({
   size = "M",
 }) {
   return (
-    <span className="rating-circle">
+    <span className={`${size} rating-circle`}>
       {" "}
       <b>{value}</b>
     </span>

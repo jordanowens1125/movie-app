@@ -11,7 +11,7 @@ const DATA = [
 
 export default function MovieWDetails() {
   return (
-    <Link href={"/"} className="movie-w-details">
+    <Link href={"/"} className="movie-w-details card">
       <img
         src="https://image.tmdb.org/t/p/w1280/uVlUu174iiKhsUGqnOSy46eIIMU.jpg"
         alt=""

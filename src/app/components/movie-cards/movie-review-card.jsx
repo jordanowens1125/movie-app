@@ -4,7 +4,7 @@ import RatingCircle from "../rating-circle";
 
 export default function MovieReview() {
   return (
-    <Link href={"/"} className="movie-review">
+    <Link href={"/"} className="movie-review card">
       <img
         src="https://image.tmdb.org/t/p/w1280/uVlUu174iiKhsUGqnOSy46eIIMU.jpg"
         alt=""

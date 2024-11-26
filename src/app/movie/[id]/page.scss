@@ -51,25 +51,6 @@
         font-size: 1.75rem;
       }
       .circle {
-        border: 3px solid rgba(104, 104, 104, 0.377);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 30px;
-        aspect-ratio: 1;
-        border-radius: 50%;
-        position: relative;
-      }
-      .circle::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border: inherit;
-        border-color: pink;
-        border-radius: inherit;
       }
       .votes {
         display: flex;
@@ -122,6 +103,27 @@
   }
   .reviews {
     grid-area: reviews;
+    .review {
+      font-size: 1.25rem;
+      display: grid;
+      grid-template-areas:
+        "rating-circle info"
+        "text text";
+      grid-template-columns: auto 1fr;
+      gap: 28px;
+      .info {
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .user {
+          font-size: 1.5rem;
+        }
+      }
+      .text {
+        grid-area: text;
+      }
+    }
   }
   .related {
     grid-area: related;
