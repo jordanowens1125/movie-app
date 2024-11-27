@@ -10,26 +10,30 @@ export default function Home() {
       <Hero />
 
       <section id="trending">
-        <h2 className="section-h">Trending Movies</h2>
-        <Carousel
-          sectionID={"trending"}
-          items={
-            <>
-              <MovieWTitle />
-              <MovieWTitle /> <MovieWTitle /> <MovieWTitle />
-            </>
-          }
-        />
+        <div className="container">
+          <h2 className="section-h">Trending Movies</h2>
+          <Carousel
+            sectionID={"trending"}
+            items={
+              <>
+                <MovieWTitle />
+                <MovieWTitle /> <MovieWTitle /> <MovieWTitle />
+              </>
+            }
+          />
+        </div>
       </section>
       <section id="reviews">
-        <h2 className="section-h">What your friends are saying.</h2>
-        <div className="group">
-          <MovieReview />
-          <MovieReview />
-          <MovieReview />
-          <MovieReview />
-          <MovieReview />
-          <MovieReview />
+        <div className="container">
+          <h2 className="section-h">What your friends are saying.</h2>
+          <div className="group">
+            <MovieReview />
+            <MovieReview />
+            <MovieReview />
+            <MovieReview />
+            <MovieReview />
+            <MovieReview />
+          </div>
         </div>
       </section>
     </main>
