@@ -12,12 +12,12 @@ export default function Hero() {
   };
   return (
     <>
-      <div className="wrapper">
+      <div className="hero-wrapper">
         <img src={bg} alt="" className="bg" />
         <div className="overlay"></div>
         <section id="hero">
           <div className="container">
-            <h1>
+            <h1 className="section-h">
               Welcome back <b>Jordan.</b> Here is what people are watching.
             </h1>
             <div className="group">
