@@ -20,7 +20,11 @@ export default function Footer() {
 
         <div>
           <p>Full Portfolio</p>
-          <Link className="item-h" href="/">
+          <Link
+            className="item-h"
+            href={"https://jordan-owens.netlify.app/"}
+            target="_blank"
+          >
             My Portfolio
           </Link>
         </div>

@@ -36,4 +36,10 @@ movie info - movie with details styling
 home    
     On hover change bg image
 
+styling
+    Icons
+    Buttons
+    text color
+    
+
 light/dark mode
