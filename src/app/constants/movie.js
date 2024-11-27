@@ -12,7 +12,7 @@ const DEMOMOVIE = {
   duration: "2 HRS",
   storyline:
     "Likeable 6th grader Liam writes to Santa asking him to prove that he's real. But Liam is dyslexic and accidentally sends his letter to Satan instead, who shows up at Liam's house, excited to have his first fanboy letter and wanting a little of Liam's soul.",
-  trailer: "https://www.youtube.com/watch?v=Cr7z5Q7oJc0",
+  trailer: "https://www.youtube.com/embed/A6XUVjK9W4o",
   reviews: [
     {
       rating: 7.0,

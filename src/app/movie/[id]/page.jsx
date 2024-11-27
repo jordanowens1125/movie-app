@@ -53,7 +53,7 @@ export default async function Page({ params }) {
           <section className="trailer">
             <h2>Watch Trailer</h2>
             <iframe
-              src="https://www.youtube.com/embed/E7wJTI-1dvQ"
+              src={DEMOMOVIE.trailer}
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen

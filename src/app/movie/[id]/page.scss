@@ -1,7 +1,10 @@
 .movie {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   section {
     padding: 10px 0 30px;
   }
@@ -173,51 +176,53 @@
     }
   }
   @media screen and (min-width: 1024px) {
-    display: grid;
-    grid-template-columns: 1fr 275px;
-    column-gap: 80px;
-    grid-template-areas:
-      "upper      upper"
-      "tags       tags"
-      "story      sidebar"
-      "trailer    sidebar"
-      "reviews    sidebar"
-      "related    sidebar";
-    .upper {
+    .container {
       display: grid;
-      grid-template-columns: 300px 1fr 275px;
+      grid-template-columns: 1fr 275px;
+      column-gap: 80px;
       grid-template-areas:
-        "img    .        ."
-        "img    info     ."
-        "img    info     ratings";
-      gap: 0;
-      .info {
-        justify-content: start;
-        grid-area: info;
-        .row {
-          flex-direction: row;
+        "upper      upper"
+        "tags       tags"
+        "story      sidebar"
+        "trailer    sidebar"
+        "reviews    sidebar"
+        "related    sidebar";
+      .upper {
+        display: grid;
+        grid-template-columns: 300px 1fr 275px;
+        grid-template-areas:
+          "img    .        ."
+          "img    info     ."
+          "img    info     ratings";
+        gap: 0;
+        .info {
+          justify-content: start;
+          grid-area: info;
+          .row {
+            flex-direction: row;
+          }
+        }
+        .movie-img {
+          width: 90%;
+          max-width: unset;
+        }
+        h1,
+        b,
+        p {
+          width: fit-content;
+          margin-left: 0;
+        }
+        b {
+          grid-area: year;
+        }
+        p {
+          grid-area: director;
         }
       }
-      .movie-img {
-        width: 90%;
-        max-width: unset;
+      .sidebar {
+        flex-direction: column;
+        gap: 40px;
       }
-      h1,
-      b,
-      p {
-        width: fit-content;
-        margin-left: 0;
-      }
-      b {
-        grid-area: year;
-      }
-      p {
-        grid-area: director;
-      }
-    }
-    .sidebar {
-      flex-direction: column;
-      gap: 40px;
     }
   }
 }
