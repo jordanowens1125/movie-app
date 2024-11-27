@@ -1,3 +1,14 @@
+Dynamic data
+    Home
+        Hover functionality
+    Movie Pages
+    Person page
+        bottom
+            directing, writing, acting, etc
+    Notfound Pages/Info
+        No person
+        No movie
+
 navbar
     Icons 
     links 
@@ -20,26 +31,9 @@ Color extraction from image
         border radient color
         movie card with details for info background
 
-Dynamic data
-    Home
-    Movie Pages
-    Person page
+movie info - movie with details styling
 
-home
-    upper that changes on hover
-
-Movie page
-    dynamic data
-    add time under content
-    video
-
-Person page 
-    bottom 
-        Directing, Writing, Acting, Vocals, Production, etc
-
-
-Notfound Pages
-    No person
-    No movie
+home    
+    On hover change bg image
 
 light/dark mode

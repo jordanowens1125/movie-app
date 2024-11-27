@@ -11,84 +11,97 @@ export default async function Page({ params }) {
   console.log(ID);
   return (
     <main>
-      <div className="container movie">
-        <section className="upper">
-          <img src={DEMOMOVIE.bgimg} alt="" className="movie-img" />
-          <div className="info">
-            <h1>{DEMOMOVIE.title}</h1>
-            <div className="row">
-              <b>{DEMOMOVIE.year}</b>
-              <p>
-                Directed By : <b>{DEMOMOVIE.director}</b>
-              </p>
+      <div className="movie">
+        <div className="container">
+          <section className="upper">
+            <img src={DEMOMOVIE.bgimg} alt="" className="movie-img" />
+            <div className="info">
+              <h1>{DEMOMOVIE.title}</h1>
+              <div className="row">
+                <b>{DEMOMOVIE.year}</b>
+                <p>
+                  Directed By : <b>{DEMOMOVIE.director}</b>
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="ratings">
-            <RatingCircle value={6.6} size="L" />
-            <span className="votes">
-              <b>{DEMOMOVIE.votes}</b>
-              Total Votes
-            </span>
-          </div>
-        </section>
-        <section className="tags">
-          {DEMOMOVIE.tags.map((tag) => (
-            <div className="tag" key={tag}>
-              {tag}
+            <div className="ratings">
+              <RatingCircle value={6.6} size="L" />
+              <span className="votes">
+                <b>{DEMOMOVIE.votes}</b>
+                Total Votes
+              </span>
             </div>
-          ))}
-        </section>
-        <section className="story">
-          <span className="content">{DEMOMOVIE.content}</span>
-          <span>
-            <h2>Storyline</h2>
-            <p>{DEMOMOVIE.storyline}</p>
-          </span>
-        </section>
-        <section className="trailer">
-          <h2>Watch Trailer</h2>
-          <video loop>
-            <source src={DEMOMOVIE.trailer} type="video/mp4" />
-          </video>{" "}
-        </section>
-        <section className="reviews">
-          {DEMOMOVIE.reviews.length > 0 ? (
-            <>
-              <h2>Reviews</h2>
-              <Review review={DEMOMOVIE.reviews[0]} />
-            </>
-          ) : (
-            <>
-              <h2>No Reviews Yet...</h2>
-            </>
-          )}
-        </section>
-        <section className="related" id="related">
-          <h2>Related</h2>
-          <Carousel
-            count={3}
-            showPerSlide={3}
-            sectionID={"related"}
-            items={
+          </section>
+          <section className="tags">
+            {DEMOMOVIE.tags.map((tag) => (
+              <div className="tag" key={tag}>
+                {tag}
+              </div>
+            ))}
+          </section>
+          <section className="story">
+            <span className="content">
+              <p>{DEMOMOVIE.content}</p>
+              <p>{DEMOMOVIE.duration}</p>
+            </span>
+            <span>
+              <h2>Storyline</h2>
+              <p>{DEMOMOVIE.storyline}</p>
+            </span>
+          </section>
+          <section className="trailer">
+            <h2>Watch Trailer</h2>
+            <iframe
+              src="https://www.youtube.com/embed/E7wJTI-1dvQ"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="video"
+            />
+          </section>
+          <section className="reviews">
+            {DEMOMOVIE.reviews.length > 0 ? (
               <>
-                <MovieWDetails />
-                <MovieWDetails />
-                <MovieWDetails />
+                <h2>Reviews</h2>
+                <Review review={DEMOMOVIE.reviews[0]} />
               </>
-            }
-          />
-        </section>
-        <section className="sidebar">
-          <div className="cast">
-            <h2>Cast</h2>
-            <Person />
-          </div>
-          <div className="crew">
-            <h2>Crew</h2>
-            <Person />
-          </div>
-        </section>
+            ) : (
+              <>
+                <h2>No Reviews Yet...</h2>
+              </>
+            )}
+          </section>
+          <section className="related" id="related">
+            <h2>Related</h2>
+            <Carousel
+              count={3}
+              showPerSlide={3}
+              sectionID={"related"}
+              items={
+                <>
+                  <MovieWDetails />
+                  <MovieWDetails />
+                  <MovieWDetails />
+                </>
+              }
+            />
+          </section>
+          <section className="sidebar">
+            <div className="cast">
+              <h2>Cast</h2>
+              {DEMOMOVIE.cast.map((person) => (
+                <Person key={person.name} />
+              ))}
+            </div>
+            <div className="crew">
+              <h2>Crew</h2>
+              {DEMOMOVIE.crew.map((person) => (
+                <Person key={person.name} />
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
     </main>
   );
