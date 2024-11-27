@@ -1,12 +1,13 @@
 import Link from "next/link";
 import "./footer.scss";
+import LOGOSVG from "../images/logo";
 
 export default function Footer() {
   return (
     <footer>
       <div className="container">
         <div className="logo">
-          logo
+          <LOGOSVG />
           <p>Used the TMBD API</p>
         </div>
 

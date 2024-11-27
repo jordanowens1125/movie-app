@@ -29,7 +29,7 @@ export default function MovieWDetails() {
           className="info-img"
         />
         <div className="right">
-          <RatingCircle value={2} />
+          <RatingCircle value={2} size="S" />
           <div className="members">
             <div className="cast">
               <p className="item-h">Robert Timothy Smith</p>

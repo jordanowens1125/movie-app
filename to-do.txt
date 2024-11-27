@@ -4,11 +4,6 @@ navbar
     function for light and dark
     Search option
 
-footer
-    Logo
-
-movie card 3 - movie card row
-
 carousel
     home
     movie page
@@ -16,18 +11,22 @@ carousel
     add mobile slide on touch ???
     broken just base it on count and what is in view
 
-rating circle
-    border gradient
-image gradient
-    movie card 2 - movie with review
+
+Color extraction from image
+    rating circle
+        border gradient
+    image gradient
+        movie card 2 - movie with review
+        border radient color
+        movie card with details for info background
 
 home
     upper that changes on hover
 
 Movie page
     dynamic data
-    reviews
     add time under content
+    video
 
 Person page 
     dynamic data
