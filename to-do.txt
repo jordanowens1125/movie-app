@@ -20,6 +20,11 @@ Color extraction from image
         border radient color
         movie card with details for info background
 
+Dynamic data
+    Home
+    Movie Pages
+    Person page
+
 home
     upper that changes on hover
 
@@ -29,7 +34,6 @@ Movie page
     video
 
 Person page 
-    dynamic data
     bottom 
         Directing, Writing, Acting, Vocals, Production, etc
 
